@@ -1,0 +1,129 @@
+/*************************************************************************/
+/******************************  Variables  ******************************/
+/*************************************************************************/
+:root {
+    /* Colors */
+    --main-white:                    #ffffff;
+    --main-green:                    #274a35;
+    --main-red:                      #92272c;
+    --main-black:                    #000000;
+    --complementary-one:             #b1c6af;
+    --complementary-two:             #d6d6d6;
+    --main-gray:                     #b1c6af;
+    --second-gray:                   #6c6d6c;
+    --main-white-transparent:        rgba(255, 255, 255, 0.4);
+    --main-gray-transparent:         rgba(177, 198, 175, 0.4);
+    --main-green-transparent:        rgba(39, 74, 53, 0.6);
+    --main-red-transparent:          rgba(146, 39, 44, 0.6);
+    --complementary-one-transparent: rgba(177, 198, 175, 0.6);
+    /* Buttons */
+    --button-white:       #ffffff;
+    --button-green:       rgb(0, 148, 0);
+    --button-green-hover: rgb(3, 122, 3);
+    --button-blue:        rgb(37, 37, 255);
+    --button-blue-hover:  rgb(20, 20, 220);
+    --button-red:         rgb(231, 0, 0);
+    --button-red-hover:   rgb(200, 3, 3);
+    /* Shadows */
+    --black-shadow-light:       rgba(0, 0, 0, 0.3);
+    --shadow-main-red:          rgba(146, 39, 44, 0.6);
+    --shadow-main-green:        rgba(39, 74, 53, 0.6);
+    --shadow-complementary-one: rgba(177, 198, 175, 0.6);
+    --slide-background:         royalblue;
+    --button-gray:              rgb(128, 128, 128);
+    --button-white:             rgb(211, 211, 211);
+    --button-gray-transparent:  rgba(128, 128, 128, 0.5);
+    --button-white-transparent: rgba(211, 211, 211, 0.5);
+    /* Calendar */
+    --cancel:     #f54f58;
+    --to-confirm: #eee350;
+    --sold:       #5deb95;
+    --available:  #7a78e4;
+    /* Readme */
+    --readme-blue-1: #22577E;
+    --readme-blue-2: #5584AC;
+    --readme-blue-3: #22577E;
+    --readme-yellow: #95D1CC;
+    --readme-blue-1: #22577E;
+    --readme-blue-2: #5584AC;
+    --readme-blue-3: #95D1CC;
+    --readme-yellow: #FAFFAF;
+    /* Social colors */
+    --facebook-color:  #1877f2;
+    --instagram-color: #dd2a7b;
+    --whatsapp-color:  #25D366;
+    --twitter-color:   #1DA1F2;
+    --linkedin-color:  #0e76a8;
+    --pinterest-color: #c8232c;
+    --youtube-color:   #c4302b;
+    --tiktok-color:    #69c9d0;
+    --facebook-transparent:  rgba(24, 119, 242, 0.4);
+    --instagram-transparent: rgba(221, 42, 123, 0.4);
+    --whatsapp-transparent:  rgba(37, 211, 102, 0.4);
+    --twitter-transparent:   rgba(29, 161, 242, 0.4);
+    --linkedin-transparent:  rgba(14, 118, 168, 0.4);
+    --pinterest-transparent: rgba(200, 35, 44, 0.4);
+    --youtube-transparent:   rgba(196, 48, 43, 0.4);
+    --tiktok-transparent:    rgba(105, 201, 208, 0.4);
+    /* Font */
+    --main-font: "Akshar", sans-serif;
+}
+  
+/************************************************************/
+/************************* Settings *************************/
+/************************************************************/
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin:     0;
+    padding:    0;
+}
+  
+html {
+    box-sizing: border-box;
+    font-size:  62.5%;
+}
+  
+/* body style */
+body {
+    background-color: var(--complementary-two);
+    font-family:      var(--main-font);
+    font-size:        1.8rem;
+    line-height:      2;
+    overflow-x:       hidden;
+    padding:          8rem 4rem;
+}
+
+/* .main-scroll as utility class */
+.main-scroll::-webkit-scrollbar {
+    background-color: transparent;
+    width:            1.2rem;
+}
+  
+.main-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--main-red);
+    border-radius:    1rem;
+    border:           solid 0.1rem var(--main-white);
+}
+  
+.main-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-green);
+    border-radius:    1rem;
+    border:           solid 0.1rem var(--complementary-two);
+}
+
+.center-buttons {
+    align-items:     center;
+    display:         flex;
+    justify-content: center;
+    padding:         2rem;
+}
+
+.confetti {
+    background:    var(--facebook-color);
+    border:        solid var(--main-white) 0.1rem;
+    border-radius: 2rem;
+    color:         var(--main-white);
+    cursor:        pointer;
+    font-size:     2rem;
+    padding:       1rem 6rem;
+}
